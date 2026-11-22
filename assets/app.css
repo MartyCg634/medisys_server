@@ -147,6 +147,7 @@ textarea { min-height: 96px; resize: vertical; }
     justify-content: center;
     width: 50px;
 }
+
 .equipment-card { padding: 0; overflow: hidden; }
 .service-section { margin-bottom: 12px; }
 .service-heading { align-items: center; background: rgba(255,255,255,.92); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 5px 16px rgba(22,46,84,.05); cursor: pointer; display: flex; justify-content: space-between; list-style: none; padding: 13px 17px; }
