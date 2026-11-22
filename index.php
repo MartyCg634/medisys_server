@@ -15,5 +15,4 @@ require_once __DIR__ . '/config/bootstrap.php';
         <a class="menu-card" href="inventarios.php"><span class="menu-icon">▣</span><strong>Inventario y Fichas técnicas</strong><span>Consultar el inventario de equipos y completar o imprimir su ficha técnica.</span></a>
         <a class="menu-card" href="cronograma.php"><span class="menu-icon">▦</span><strong>Cronograma de mantenimiento</strong><span>Consultar los mantenimientos preventivos de todos los equipos por servicio y mes.</span></a>
     </section>
-</main></body>
-</html>
+</main></body></html>
