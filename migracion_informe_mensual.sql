@@ -1,0 +1,30 @@
+USE reportes_clinica;
+
+CREATE TABLE IF NOT EXISTS informes_mensuales (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    codigo VARCHAR(60) NOT NULL UNIQUE,
+    periodo_inicio DATE NOT NULL,
+    periodo_fin DATE NOT NULL,
+    ciudad_emision VARCHAR(120) NOT NULL,
+    fecha_emision DATE NOT NULL,
+    establecimiento VARCHAR(160) NOT NULL,
+    responsable_tecnico VARCHAR(160) NOT NULL,
+    dependencia VARCHAR(160) NOT NULL,
+    marco_normativo VARCHAR(200) NOT NULL,
+    ordenes_atendidas SMALLINT UNSIGNED NOT NULL DEFAULT 0,
+    emergencias_fuera_horario SMALLINT UNSIGNED NOT NULL DEFAULT 0,
+    horas_compensar DECIMAL(7,2) NOT NULL DEFAULT 0,
+    resumen_ejecutivo TEXT NULL,
+    compensacion_horaria TEXT NULL,
+    eventos_json LONGTEXT NOT NULL,
+    mantenimientos_json LONGTEXT NOT NULL,
+    observaciones_equipos_json LONGTEXT NOT NULL,
+    conclusiones_json LONGTEXT NOT NULL,
+    firma_responsable VARCHAR(160) NOT NULL,
+    cargo_responsable VARCHAR(160) NOT NULL,
+    firma_autoridad VARCHAR(160) NOT NULL,
+    cargo_autoridad VARCHAR(160) NOT NULL,
+    entidad_autoridad VARCHAR(160) NOT NULL,
+    creado_en TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    actualizado_en TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
